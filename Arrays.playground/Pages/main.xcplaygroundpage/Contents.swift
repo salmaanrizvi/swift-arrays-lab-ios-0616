@@ -13,7 +13,7 @@
  */
 // write your code here
 
-
+let array = ["bread", "butter", "cheese", "lettuce", "tomatoes"]
 
 
 
@@ -23,7 +23,7 @@
  */
 // write your code here
 
-
+let shoppingList : [String] = ["bread", "butter", "cheese", "lettuce", "tomatoes"]
 
 
 
@@ -32,18 +32,20 @@
  */
 // write your code here
 
+var futureShoppingList : [String] = []
 
-
-
-
+futureShoppingList.append("bread")
+futureShoppingList.append("butter")
+futureShoppingList.append("cheese")
+futureShoppingList.append("lettuce")
+futureShoppingList.append("tomatoes")
 
 /*: question4
  ### 4. Write an array called 'cheeseSandwich' **with** a type specified whose values will never change and contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
 
-
-
+let cheeseSandwich : [String] = ["bread", "butter", "cheese", "lettuce", "tomatoes"]
 
 
 
@@ -52,7 +54,7 @@
  */
 // write your code here
 
-
+let desertList = ["cookie dough", "icecream"]
 
 
 
@@ -63,10 +65,7 @@
  */
 // write your code here
 
-
-
-
-
+let afternoonAttendance : [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -75,10 +74,8 @@
  */
 // write your code here
 
-
-
-
-
+let itemToPrint = shoppingList[1]
+print(itemToPrint)
 
 
 
@@ -87,9 +84,7 @@
  */
 // write your code here
 
-
-
-
+futureShoppingList[futureShoppingList.indexOf("cheese")!] = "chicken"
 
 
 
@@ -99,7 +94,12 @@
  */
 // write your code here
 
-
+func lifesEssential(ingredients : [String]) -> Bool {
+    if ingredients[0] == "bread" {
+        return true
+    }
+    return false
+}
 
 
 
@@ -109,8 +109,7 @@
  */
 // write your code here
 
-
-
+print(lifesEssential(shoppingList))
 
 
 
@@ -121,7 +120,7 @@
  */
 // write your code here
 
-
+print(lifesEssential(desertList))
 
 
 
